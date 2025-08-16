@@ -1,53 +1,79 @@
-# sae23
-Creation of an IT solution. IPAM solution.
+# SAE23 – IT Solution Creation (IPAM Platform)
 
-# explications
-Programming an addressing platform for a fictitious company. The platform is divided into three sites with 3 administrators.
+## Project Overview
+The goal is to create an **IP Address Management (IPAM) platform** for a fictitious company.  
+The platform is divided into **three sites**, each with its own **administrator**.  
 
-# administrators 
-The administrators can create clients, delete them and consult a list of the clients on their sites. 
-As soon as a client is created, it is assigned an IP address and a VLAN.
+---
 
-# clients
-The clients can assign IP addresses to their machines according to the network. They can also consult a list of the machines on their VLANS,
-and delete the machines. 
+## Administrators
+- Can **create clients**, **delete clients**, and **view the list of clients** for their site.  
+- When a **client is created**, the platform automatically assigns:
+  - An **IP address**
+  - A **VLAN**
 
-# php files
-#form-connexion.php
-The page named form-connexion.php is used as a connection form. You can log in as an administrator or as a client.
-To make the connection more secure, the password entered by a user is displayed in the form of dots.
-You can contact support by clicking on Contact Support, which redirects the user to their mailbox via a mailto:
-link followed by the recipient's email address. When we log in, we are redirected to the connexion.php page.
+---
 
-# menu.php
-If the user has logged in as an administrator, they have the choice of:
-- add a customer
-- view the list of customers
-- log out
-If the administrator user chooses to add a customer by pressing the "Add a customer" button, they are redirected to the following page:
+## Clients
+- Can **assign IP addresses** to their machines according to the network.  
+- Can **view the list** of the machines in their VLAN.  
+- Can **delete machines**.  
 
-# form-ajout-client.php
-On this page, the administrator can add a customer with the following characteristics:
-- customer name
-- login
-- password
-- e-mail
+---
 
-# liste_client.php
-By pressing the "Customer list" button to display the list of customers. We can see the customer we created earlier. 
-Knowing that it was the administrator of group 1 who created the client, it belongs to site 1. It has a client ID,
-and a network address according to the addressing requested in the specifications. It also has a Distinguisher Route,
-and the information entered in the form when it was added. 
-We can add other clients until we reach the limit of 16 clients.
+## PHP Files
 
-# menu_client.php
-As specified at the time of connection, the client can access the menu_client.php file to add a machine, list the various machines and delete machines. 
+### `form-connexion.php`
+- Provides the **login form**.  
+- Users can log in as **administrator** or **client**.  
+- Passwords are hidden (displayed as dots).  
+- Contains a **"Contact Support"** link (`mailto:` with predefined email).  
+- After login, redirects to **`connexion.php`**.  
 
-Let's say we add a machine named p2021 to room P202. All we have to do is fill in the fields in question.
+---
 
-# tools 
-#postgres
-to use the sql file we can use postgreSQL
+### `menu.php` (Administrator Menu)
+If the user is an **administrator**, they have the following options:
+- **Add a customer**
+- **View the list of customers**
+- **Log out**
 
-# wamp
-to access to the platform we can use wamp or xamp
+When choosing **"Add a customer"**, the administrator is redirected to:
+
+---
+
+### `form-ajout-client.php`
+Allows the administrator to create a **new client** with the following details:
+- Customer name  
+- Login  
+- Password  
+- Email  
+
+---
+
+### `liste_client.php`
+- Displays the **list of clients** created.  
+- Example: if the **Administrator of Site 1** creates a client, it will:
+  - Belong to **Site 1**
+  - Have a **Client ID**
+  - Receive a **network address** according to the specifications
+  - Have a **Route Distinguisher**
+  - Display the **info entered in the creation form**  
+
+Limit: **16 clients per site**.  
+
+---
+
+### `menu_client.php` (Client Menu)
+When logged in as a **client**, the menu provides options to:
+- **Add a machine**
+- **List machines**
+- **Delete machines**
+
+Example: adding a machine named `p2021` in room `P202` simply requires filling in the form.  
+
+---
+
+## Tools and Technologies
+- **PostgreSQL** → To manage the database (SQL file).  
+- **WAMP / XAMPP** → To host and run the PHP platform locally.  
