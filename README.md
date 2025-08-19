@@ -1,4 +1,5 @@
 # SAE23 – IT Solution Creation (IPAM Platform)
+<img width="1919" height="899" alt="Capture d'écran 2025-08-19 231739" src="https://github.com/user-attachments/assets/15ff2fdd-09bd-460d-8642-08129d2dbf61" />
 
 ## Project Overview
 The goal is to create an **IP Address Management (IPAM) platform** for a fictitious company.  
