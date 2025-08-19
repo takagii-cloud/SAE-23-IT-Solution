@@ -12,6 +12,7 @@ The platform is divided into **three sites**, each with its own **administrator*
 - When a **client is created**, the platform automatically assigns:
   - An **IP address**
   - A **VLAN**
+<img width="1918" height="898" alt="Capture d'écran 2025-08-19 232020" src="https://github.com/user-attachments/assets/bc1f0df5-aa1e-4a51-8c36-fd8215d7e585" />
 
 ---
 
@@ -19,6 +20,7 @@ The platform is divided into **three sites**, each with its own **administrator*
 - Can **assign IP addresses** to their machines according to the network.  
 - Can **view the list** of the machines in their VLAN.  
 - Can **delete machines**.  
+<img width="1919" height="899" alt="Capture d'écran 2025-08-19 232226" src="https://github.com/user-attachments/assets/74ffb1e4-5b12-472f-9e86-31dbb9b457f6" />
 
 ---
 
