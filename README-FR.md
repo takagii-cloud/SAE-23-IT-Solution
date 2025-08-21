@@ -1,4 +1,5 @@
 # SAE23 – Création d’une Solution Informatique (Plateforme IPAM)
+<img width="1919" height="899" alt="image" src="https://github.com/user-attachments/assets/d4ed1c0d-894f-4dfa-ba59-d45b61a5658d" />
 
 ## Présentation du Projet
 L’objectif est de créer une **plateforme de gestion d’adresses IP (IPAM)** pour une entreprise fictive.  
@@ -11,6 +12,7 @@ La plateforme est divisée en **trois sites**, chacun disposant de son propre **
 - Lorsqu’un **client est créé**, la plateforme lui assigne automatiquement :
   - Une **adresse IP**
   - Un **VLAN**
+<img width="1918" height="898" alt="image" src="https://github.com/user-attachments/assets/1377dc46-2af8-461c-bf62-6069ef917d5b" />
 
 ---
 
@@ -18,6 +20,7 @@ La plateforme est divisée en **trois sites**, chacun disposant de son propre **
 - Peuvent **attribuer des adresses IP** à leurs machines en fonction du réseau.  
 - Peuvent **consulter la liste** des machines de leur VLAN.  
 - Peuvent **supprimer des machines**.  
+<img width="1919" height="899" alt="image" src="https://github.com/user-attachments/assets/62d10e3b-0625-4820-9675-1f945cef988d" />
 
 ---
 
